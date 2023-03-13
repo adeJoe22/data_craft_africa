@@ -1,5 +1,5 @@
 import React from "react";
-import { BsTwitter } from "react-icons/bs";
+import { AiOutlineTwitter } from "react-icons/ai";
 import {
   FooterCaption,
   FooterCaptionContent,
@@ -39,7 +39,7 @@ const Footer = () => {
             <SocialSection>
               <p>Follow us on Social platform</p>
               <span>
-                <BsTwitter />
+                <AiOutlineTwitter />
               </span>
               <div>© 2023 Data Craft</div>
             </SocialSection>
