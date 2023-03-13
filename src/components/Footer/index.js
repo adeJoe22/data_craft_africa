@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineTwitter } from "react-icons/ai";
+// import { AiOutlineTwitter } from "react-icons/ai";
 import {
   FooterCaption,
   FooterCaptionContent,
@@ -38,9 +38,7 @@ const Footer = () => {
             </ContactSection>
             <SocialSection>
               <p>Follow us on Social platform</p>
-              <span>
-                <AiOutlineTwitter />
-              </span>
+              <span>{/* <AiOutlineTwitter /> */}</span>
               <div>© 2023 Data Craft</div>
             </SocialSection>
           </FooterRow>
