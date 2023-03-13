@@ -25,7 +25,7 @@ const Footer = () => {
           <FooterRow>
             <ContactSection>
               <Address>
-                <div>Data Craft</div>
+                <div>Data Craft Africa Limited</div>
                 <p>New Haven, Ushirika Road, Karen, Nairobi</p>
               </Address>
               <ContactForm>
@@ -39,7 +39,7 @@ const Footer = () => {
             <SocialSection>
               <p>Follow us on Social platform</p>
               <span>{/* <AiOutlineTwitter /> */}</span>
-              <div>© 2023 Data Craft</div>
+              <div>© 2023 Data Craft Africa Limited</div>
             </SocialSection>
           </FooterRow>
         </FooterWrapper>

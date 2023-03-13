@@ -32,7 +32,7 @@ const Products = () => {
               <div>Our Products</div>
               <p>
                 We have a wide range of products, classified in 3 different
-                sectorswe need some intros for
+                sectors we need some intros for
               </p>
             </ProductCaptionContent>
           </ProductCaption>
@@ -71,7 +71,7 @@ const Products = () => {
               </ProductCard3>
             ))}
           </ProductRow>
-          <ProductsModal>
+          {/* <ProductsModal>
             <ModalWrap>
               {details.map((props) => (
                 <ModalCard key={props.id}>
@@ -83,7 +83,7 @@ const Products = () => {
                 </ModalCard>
               ))}
             </ModalWrap>
-          </ProductsModal>
+          </ProductsModal> */}
         </ProductWrapper>
       </ProductContainer>
     </>

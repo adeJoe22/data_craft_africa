@@ -1,11 +1,8 @@
 import styled from "styled-components";
 
 export const ProductContainer = styled.div`
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
-  }
   @media screen and (max-width: 425px) {
-    padding: 100px 0;
+    padding: 50px 0;
   }
 `;
 export const ProductWrapper = styled.div`
@@ -17,9 +14,6 @@ export const ProductWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-
-  @media screen and (max-width: 768px) {
-  }
 `;
 export const ProductCaption = styled.div`
   width: 100%;

@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const WelcomeContainer = styled.div`
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 20px 0;
   }
   @media screen and (max-width: 425px) {
-    padding: 100px 0;
+    padding: 30px 10px;
+    height: 900px;
   }
 `;
 
@@ -18,12 +19,8 @@ export const WelcomeWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-
   @media screen and (max-width: 768px) {
-    height: 820px;
-  }
-  @media screen and (max-width: 425px) {
-    height: 900px;
+    height: 880px;
   }
 `;
 
@@ -32,8 +29,6 @@ export const WelcomeCaption = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: 425px) {
-  }
 `;
 
 export const CaptionContent = styled.div`

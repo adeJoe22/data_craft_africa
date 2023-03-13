@@ -11,7 +11,8 @@ export const FooterContainer = styled.div`
     padding: 100px 0;
   }
   @media screen and (max-width: 425px) {
-    padding: 100px 0;
+    padding: 50px 0;
+    height: 655px;
   }
 `;
 
@@ -25,14 +26,12 @@ export const FooterWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-  /* @media screen and (max-width: 768px) {
-    padding: 100px 0;
-    background-color: aliceblue;
-    width: 768px;
+  height: 100%;
+  @media screen and (max-width: 768px) {
   }
   @media screen and (max-width: 425px) {
-    padding: 100px 0;
-  } */
+    height: 100%;
+  }
 `;
 
 export const FooterCaption = styled.div`
@@ -97,7 +96,7 @@ export const Address = styled.div`
   }
 `;
 export const ContactForm = styled.form`
-  width: 280px;
+  width: 320px;
   height: 200px;
   padding: 0px 25px;
   div {

@@ -47,7 +47,7 @@ export const HeroHeading = styled.div`
   @media screen and (max-width: 768px) {
     font-size: 26px;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 425px) {
     font-size: 22px;
   }
 `;
@@ -59,4 +59,10 @@ export const Form = styled.form`
   border-right: 2px solid red;
   border-left: 2px solid red;
   border-bottom: 2px solid red;
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 425px) {
+    width: 300px;
+    height: 280px;
+  }
 `;
