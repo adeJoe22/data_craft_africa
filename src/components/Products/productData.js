@@ -1,0 +1,124 @@
+export const cardThree = [
+  {
+    id: 1,
+    title: "Other Systems",
+    desc: "Pivot Access has developed other systems that improve customer experience and efficiency through use of sophisticated means such as USSD and other mobile applications",
+    link: [
+      {
+        id: 1,
+        name: "Tekana",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+      {
+        id: 2,
+        name: "Rapid Sms",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+      {
+        id: 3,
+        name: "Malaria Surveilance System",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+      {
+        id: 4,
+        name: "M4rh",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+      {
+        id: 5,
+        name: "Pplus",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+      {
+        id: 6,
+        name: "Communicator",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+      {
+        id: 7,
+        name: "Your voice",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+      {
+        id: 8,
+        name: "Pivot gate",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+      {
+        id: 9,
+        name: "PDialer",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+    ],
+  },
+];
+
+export const cardOne = [
+  {
+    id: 1,
+    title: "FINANCIAL SOLUTIONS",
+    desc: "Solutions developed for Banks to enable extension of services and products to their customers.",
+    link: [
+      {
+        id: 1,
+        name: "Agency Banking",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+      {
+        id: 2,
+        name: "VaultX",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+      {
+        id: 3,
+        name: "Pico",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+      {
+        id: 4,
+        name: "Pswift",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+      {
+        id: 5,
+        name: "Pmobile",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+      {
+        id: 6,
+        name: "E-banking",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+    ],
+  },
+];
+
+export const cardTwo = [
+  {
+    id: 1,
+    title: "Payments Systems",
+    desc: "Act as a conduit to service providers to facilitate third party integrations.",
+    link: [
+      {
+        id: 1,
+        name: "E-sale",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+      {
+        id: 2,
+        name: "E-tax",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+      {
+        id: 3,
+        name: "Mpay",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+      {
+        id: 4,
+        name: "Push & Pull",
+        desc: "A software platform that facilitates banks to provide banking services to the under banked or the unbanked in rural and urban areas at a low cost investment. The banking services are provided via credible agents mostly with already existing businesses. Agents use our software that runs on mobile phones, computers with Internet, ATMs (for card-less transactions) and GPRS/3G enables POS. Agency banking features include opening new accounts, deposit, withdraws, e-tax, transfer money to accounts/mobile phones.",
+      },
+    ],
+  },
+];
