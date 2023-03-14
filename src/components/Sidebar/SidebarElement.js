@@ -21,6 +21,9 @@ export const SidebarContainer = styled.aside`
   @media screen and (max-width: 425px) {
     width: 425px;
   }
+  @media screen and (max-width: 320px) {
+    width: 320px;
+  }
 `;
 
 export const CloseIcon = styled(FaTimes)`
