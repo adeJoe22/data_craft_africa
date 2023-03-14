@@ -4,6 +4,9 @@ export const ProductContainer = styled.div`
   @media screen and (max-width: 425px) {
     padding: 50px 0;
   }
+  @media screen and (max-width: 320px) {
+    padding: 50px 0;
+  }
 `;
 export const ProductWrapper = styled.div`
   display: flex;
@@ -42,6 +45,9 @@ export const ProductCaptionContent = styled.div`
     color: #676a6c;
     font-size: 30px;
     margin-bottom: 15px;
+    @media screen and (max-width: 320px) {
+      font-size: 24px;
+    }
   }
   p {
     color: #676a6c;
@@ -54,6 +60,10 @@ export const ProductCaptionContent = styled.div`
     @media screen and (max-width: 425px) {
       padding: 0 15px 25px 15px;
       width: 390px;
+    }
+    @media screen and (max-width: 320px) {
+      padding: 0 15px 25px 15px;
+      width: 270px;
     }
   }
 `;
@@ -73,6 +83,10 @@ export const ProductCard = styled.div`
   flex-direction: column;
   align-items: center;
   border-radius: 4px;
+  @media screen and (max-width: 320px) {
+    padding: 0 15px 25px 15px;
+    width: 290px;
+  }
 `;
 export const ProductCard2 = styled.div`
   width: 350px;
@@ -82,6 +96,10 @@ export const ProductCard2 = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 320px) {
+    padding: 0 15px 25px 15px;
+    width: 290px;
+  }
 `;
 export const ProductCard3 = styled.div`
   width: 350px;
@@ -91,6 +109,10 @@ export const ProductCard3 = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #f4f4f4;
+  @media screen and (max-width: 320px) {
+    padding: 0 15px 25px 15px;
+    width: 290px;
+  }
 `;
 
 export const CardTitle = styled.div`
@@ -104,6 +126,10 @@ export const CardTitle = styled.div`
   background-color: #c52d2f;
   color: #fff;
   border-radius: 4px 4px 0 0;
+  @media screen and (max-width: 320px) {
+    font-weight: 600;
+    font-size: 17px;
+  }
 `;
 export const Description = styled.div`
   text-align: center;
@@ -133,5 +159,10 @@ export const Links = styled.div`
   cursor: pointer;
   &:hover {
     text-decoration: underline;
+  }
+  @media screen and (max-width: 320px) {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
   }
 `;

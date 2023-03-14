@@ -30,6 +30,9 @@ export const ReferenceCaption = styled.div`
     color: #676a6c;
     font-size: 30px;
     margin-bottom: 15px;
+    @media screen and (max-width: 320px) {
+      font-size: 24px;
+    }
   }
   p {
     color: #676a6c;
@@ -43,6 +46,10 @@ export const ReferenceCaption = styled.div`
       padding: 0 15px 25px 15px;
       width: 390px;
     }
+    @media screen and (max-width: 320px) {
+      padding: 0 15px 25px 15px;
+      width: 270px;
+    }
   }
 `;
 export const ReferenceRow = styled.div`
@@ -55,6 +62,9 @@ export const ReferenceRow = styled.div`
     flex-wrap: wrap;
   }
   @media screen and (max-width: 425px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 320px) {
     flex-wrap: wrap;
   }
 `;
@@ -79,6 +89,14 @@ export const RefCompany = styled.div`
     align-items: center;
     justify-content: space-between;
   }
+  @media screen and (max-width: 320px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red;
+    width: 300px;
+  }
 `;
 export const Company = styled.div`
   div {
@@ -94,6 +112,10 @@ export const Company = styled.div`
       width: 260px;
       font-size: 13px;
     }
+    @media screen and (max-width: 320px) {
+      width: 260px;
+      font-size: 12px;
+    }
   }
   span {
     font-size: 13px;
@@ -103,5 +125,9 @@ export const Logo = styled.div`
   img {
     height: 120px;
     width: 100px;
+    @media screen and (max-width: 320px) {
+      height: 100px;
+      width: 80px;
+    }
   }
 `;

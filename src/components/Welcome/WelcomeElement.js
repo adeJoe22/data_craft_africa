@@ -8,6 +8,10 @@ export const WelcomeContainer = styled.div`
     padding: 30px 10px;
     height: 900px;
   }
+  @media screen and (max-width: 320px) {
+    padding: 30px 10px;
+    height: 900px;
+  }
 `;
 
 export const WelcomeWrapper = styled.div`
@@ -49,6 +53,9 @@ export const CaptionContent = styled.div`
     color: #676a6c;
     font-size: 30px;
     margin-bottom: 15px;
+    @media screen and (max-width: 320px) {
+      font-size: 24px;
+    }
   }
   p {
     color: #676a6c;
@@ -61,6 +68,10 @@ export const CaptionContent = styled.div`
     @media screen and (max-width: 425px) {
       padding: 0 15px 25px 15px;
       width: 390px;
+    }
+    @media screen and (max-width: 320px) {
+      padding: 0 15px 25px 15px;
+      width: 270px;
     }
   }
 `;
@@ -114,6 +125,10 @@ export const Heading = styled.div`
     font-size: 20px;
     text-align: center;
   }
+  @media screen and (max-width: 320px) {
+    font-size: 16px;
+    text-align: center;
+  }
 `;
 
 export const Subtitle = styled.p`
@@ -126,6 +141,10 @@ export const Subtitle = styled.p`
   @media screen and (max-width: 425px) {
     text-align: center;
     width: 380px;
+  }
+  @media screen and (max-width: 320px) {
+    text-align: center;
+    width: 270px;
   }
 `;
 
@@ -141,7 +160,7 @@ export const Button = styled.button`
   border: none;
   font-weight: 500;
   font-size: 18px;
-  background-color: red;
+  background-color: #c52d2f;
 `;
 export const ImgWrap = styled.div`
   max-width: 600px;
@@ -151,6 +170,9 @@ export const ImgWrap = styled.div`
   }
   @media screen and (max-width: 425px) {
     width: 370px;
+  }
+  @media screen and (max-width: 320px) {
+    width: 270px;
   }
 `;
 

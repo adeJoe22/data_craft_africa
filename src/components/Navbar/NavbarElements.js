@@ -49,6 +49,9 @@ export const NavLogo = styled(LinkR)`
     display: flex;
     font-size: 1.8rem;
     color: #000;
+    @media screen and (max-width: 320px) {
+      display: none;
+    }
   }
 `;
 
@@ -104,7 +107,7 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    /* border-top: 3px solid #c52d2f; */
+    border-top: 3px solid #c52d2f;
     color: #000;
   }
 `;

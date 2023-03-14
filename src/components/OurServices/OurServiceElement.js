@@ -4,6 +4,9 @@ export const ServiceComponent = styled.div`
   @media screen and (max-width: 425px) {
     padding: 40px 10px;
   }
+  @media screen and (max-width: 320px) {
+    padding: 20px 10px;
+  }
 `;
 export const ServiceWrapper = styled.div`
   display: flex;
@@ -17,6 +20,9 @@ export const ServiceWrapper = styled.div`
   justify-content: center;
   @media screen and (max-width: 425px) {
     width: 425px;
+  }
+  @media screen and (max-width: 320px) {
+    width: 320px;
   }
 `;
 
@@ -38,6 +44,9 @@ export const ServiceCaption = styled.div`
     color: #676a6c;
     font-size: 30px;
     margin-bottom: 15px;
+    @media screen and (max-width: 320px) {
+      font-size: 24px;
+    }
   }
   p {
     color: #676a6c;
@@ -51,6 +60,10 @@ export const ServiceCaption = styled.div`
       padding: 0 15px 25px 15px;
       width: 390px;
     }
+    @media screen and (max-width: 320px) {
+      padding: 0 15px 25px 15px;
+      width: 270px;
+    }
   }
 `;
 
@@ -63,6 +76,9 @@ export const ServiceRow = styled.div`
     flex-wrap: wrap;
   }
   @media screen and (max-width: 425px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 320px) {
     flex-wrap: wrap;
   }
 `;
@@ -89,6 +105,9 @@ export const Items = styled.div`
     font-size: 18px;
     text-align: center;
     color: #676a6c;
+    @media screen and (max-width: 320px) {
+      font-size: 15px;
+    }
   }
   p {
     font-weight: 400;
@@ -97,5 +116,8 @@ export const Items = styled.div`
     color: #676a6c;
     line-height: 1.4;
     margin-top: 10px;
+    @media screen and (max-width: 320px) {
+      font-size: 12px;
+    }
   }
 `;
