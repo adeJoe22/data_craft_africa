@@ -15,6 +15,9 @@ export const ServiceWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+  @media screen and (max-width: 425px) {
+    width: 425px;
+  }
 `;
 
 export const ServiceCaption = styled.div`

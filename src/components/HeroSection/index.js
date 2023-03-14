@@ -6,6 +6,8 @@ import {
   HeroContent,
   HeroHeading,
   Form,
+  Left,
+  Right,
 } from "./HeroSectionElements";
 import bg1 from "../../images/bg1.jpeg";
 import bg2 from "../../images/bg2.jpeg";
@@ -18,12 +20,27 @@ const HeroSection = () => {
     <>
       {/* <Slider> */}
       <HeroContainer>
-        <HeroBg>
+        {/* <HeroBg>
           <ImageBg src={bg2} alt="bgImage2" />
-        </HeroBg>
+        </HeroBg> */}
 
         <HeroContent>
-          <Form></Form>
+          <Form>
+            <Left>
+              <div>
+                <label>Username</label>
+                <input placeholder="Username" />
+              </div>
+              <div>
+                <label>Password</label>
+                <input placeholder="Password" />
+              </div>
+            </Left>
+            <Right>
+              <button type="submit">Login</button>
+              <div>Forgot Password?</div>
+            </Right>
+          </Form>
           <HeroHeading>
             Our core values: <br />
             Creativity, efficiency and quality.

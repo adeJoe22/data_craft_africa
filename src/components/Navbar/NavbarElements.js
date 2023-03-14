@@ -6,7 +6,7 @@ export const Nav = styled.nav`
   background-color: transparent;
   height: 70px;
   display: flex;
-  /* margin-top: -70px; */
+  margin-top: -70px;
   justify-content: center;
   align-items: center;
   position: sticky;
@@ -19,6 +19,9 @@ export const Nav = styled.nav`
   }
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
+  }
+
+  @media screen and (max-width: 425px) {
   }
 `;
 
@@ -61,6 +64,11 @@ export const MobileIcon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
+    &.active {
+      color: #000;
+    }
+  }
+  @media screen and (max-width: 425px) {
     &.active {
       color: #000;
     }
