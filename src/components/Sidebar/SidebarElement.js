@@ -45,6 +45,9 @@ export const SidebarWrapper = styled.div`
   overflow-y: scroll;
   height: 100%;
   margin-top: 20px;
+  @media screen and (max-width: 320px) {
+    overflow-y: hidden;
+  }
 `;
 export const SidebarMenu = styled.ul`
   display: grid;

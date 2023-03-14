@@ -94,7 +94,7 @@ export const RefCompany = styled.div`
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
-    background-color: red;
+
     width: 300px;
   }
 `;

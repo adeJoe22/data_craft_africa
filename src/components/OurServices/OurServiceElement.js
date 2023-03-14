@@ -22,7 +22,7 @@ export const ServiceWrapper = styled.div`
     width: 400px;
   }
   @media screen and (max-width: 320px) {
-    width: 320px;
+    width: 300px;
   }
 `;
 
@@ -80,6 +80,7 @@ export const ServiceRow = styled.div`
   }
   @media screen and (max-width: 320px) {
     flex-wrap: wrap;
+    /* background-color: red; */
   }
 `;
 
@@ -90,12 +91,18 @@ export const ServiceColumn = styled.div`
   @media screen and (max-width: 425px) {
     width: 380px;
   }
+  @media screen and (max-width: 320px) {
+    width: 270px;
+  }
 `;
 export const ServiceColumn2 = styled.div`
   img {
     width: 100%;
     @media screen and (max-width: 425px) {
       width: 390px;
+    }
+    @media screen and (max-width: 320px) {
+      width: 290px;
     }
   }
 `;
@@ -113,6 +120,7 @@ export const Items = styled.div`
     color: #676a6c;
     @media screen and (max-width: 320px) {
       font-size: 15px;
+      width: 270px;
     }
   }
   p {
@@ -122,14 +130,15 @@ export const Items = styled.div`
     color: #676a6c;
     line-height: 1.4;
     margin-top: 10px;
-    @media screen and (max-width: 320px) {
-      font-size: 12px;
-    }
+
     @media screen and (max-width: 425px) {
       font-size: 12px;
-
       width: 370px;
       margin: 15px 0px;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 12px;
+      width: 260px;
     }
   }
 `;
