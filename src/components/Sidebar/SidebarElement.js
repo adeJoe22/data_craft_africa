@@ -16,13 +16,13 @@ export const SidebarContainer = styled.aside`
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
-  border: 1px solid red;
 
   @media screen and (max-width: 425px) {
     width: 425px;
   }
   @media screen and (max-width: 320px) {
     width: 320px;
+    height: 47%;
   }
 `;
 
@@ -44,6 +44,7 @@ export const SidebarWrapper = styled.div`
   background-color: #fff;
   overflow-y: scroll;
   height: 100%;
+  margin-top: 20px;
 `;
 export const SidebarMenu = styled.ul`
   display: grid;
@@ -53,11 +54,14 @@ export const SidebarMenu = styled.ul`
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(6, 60px);
   }
+  @media screen and (max-width: 320px) {
+    grid-template-rows: repeat(6, 40px);
+  }
 `;
 export const SidebarLink = styled(LinkS)`
   display: flex;
   align-items: center;
-  padding-left: 15px;
+  padding-left: 25px;
   font-size: 1rem;
   text-decoration: none;
   list-style: none;
