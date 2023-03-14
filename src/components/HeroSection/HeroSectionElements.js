@@ -13,34 +13,16 @@ export const HeroContainer = styled.div`
   height: 490px;
   width: 100%;
   z-index: 1;
-
-  @media screen and (max-width: 425px) {
-    /* top: -70px; */
-  }
-`;
-
-export const HeroBg = styled.div`
-  width: 100%;
-  /* height: 100%; */
-`;
-
-export const ImageBg = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 `;
 
 export const HeroContent = styled.div`
   z-index: 3;
-  position: absolute;
   color: #fff;
-  top: 0;
-  left: 50px;
-  bottom: 0;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
+  width: 100%;
   @media screen and (max-width: 320px) {
     top: 80px;
   }
@@ -50,6 +32,7 @@ export const HeroHeading = styled.div`
   font-size: 30px;
   width: 480px;
   margin-bottom: 100px;
+  margin-left: 50px;
   @media screen and (max-width: 768px) {
     font-size: 26px;
   }
@@ -66,6 +49,7 @@ export const HeroHeading = styled.div`
 export const Form = styled.form`
   width: 400px;
   height: 220px;
+  margin-left: 50px;
   background-color: #fff;
   border-right: 2px solid #c52d2f;
   border-left: 2px solid #c52d2f;

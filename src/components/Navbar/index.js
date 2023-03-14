@@ -12,7 +12,8 @@ import { FaBars } from "react-icons/fa";
 import logo from "../../images/logo.png";
 import { navLinkItems } from "../navData";
 import { useState } from "react";
-
+import { useEffect } from "react";
+import { animateScroll as scroll } from "react-scroll";
 const Navbar = ({ toggle }) => {
   const [navbar, setNavbar] = useState(false);
 
@@ -24,12 +25,18 @@ const Navbar = ({ toggle }) => {
     }
   };
 
-  window.addEventListener("scroll", changeBcg);
+  useEffect(() => {
+    window.addEventListener("scroll", changeBcg);
+  }, []);
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
     <>
       <Nav className={navbar && "active"}>
         <NavbarContainer>
-          <NavLogo>
+          <NavLogo to={"/"} onClick={toggleHome}>
             <img src={logo} alt="DataCraft" />
             <div style={{ textDecoration: "none" }}>
               <p style={{ fontWeight: "600" }}>DATA</p> <p>CRAFT</p>
@@ -39,9 +46,9 @@ const Navbar = ({ toggle }) => {
             <FaBars />
           </MobileIcon>
           <NavMenu>
-            {navLinkItems.map(({ to, name }) => (
-              <NavItem key={to}>
-                <NavLinks className={navbar && "active"} to={to}>
+            {navLinkItems.map(({ to, name }, i) => (
+              <NavItem key={i}>
+                <NavLinks to={to} className={navbar && "active"}>
                   {name}
                 </NavLinks>
               </NavItem>

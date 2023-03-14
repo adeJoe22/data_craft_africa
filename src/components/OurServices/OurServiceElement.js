@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ServiceComponent = styled.div`
   @media screen and (max-width: 425px) {
-    padding: 40px 10px;
+    padding: 40px 15px;
   }
   @media screen and (max-width: 320px) {
     padding: 20px 10px;
@@ -19,7 +19,7 @@ export const ServiceWrapper = styled.div`
   margin-right: auto;
   justify-content: center;
   @media screen and (max-width: 425px) {
-    width: 425px;
+    width: 400px;
   }
   @media screen and (max-width: 320px) {
     width: 320px;
@@ -87,10 +87,16 @@ export const ServiceColumn = styled.div`
   display: flex;
   flex-direction: column;
   width: 640px;
+  @media screen and (max-width: 425px) {
+    width: 380px;
+  }
 `;
 export const ServiceColumn2 = styled.div`
   img {
     width: 100%;
+    @media screen and (max-width: 425px) {
+      width: 390px;
+    }
   }
 `;
 export const Items = styled.div`
@@ -118,6 +124,12 @@ export const Items = styled.div`
     margin-top: 10px;
     @media screen and (max-width: 320px) {
       font-size: 12px;
+    }
+    @media screen and (max-width: 425px) {
+      font-size: 12px;
+
+      width: 370px;
+      margin: 15px 0px;
     }
   }
 `;
