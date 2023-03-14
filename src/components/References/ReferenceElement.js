@@ -94,8 +94,7 @@ export const RefCompany = styled.div`
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
-
-    width: 300px;
+    width: 280px;
   }
 `;
 export const Company = styled.div`
@@ -113,12 +112,17 @@ export const Company = styled.div`
       font-size: 13px;
     }
     @media screen and (max-width: 320px) {
-      width: 260px;
+      width: 250px;
       font-size: 12px;
+      margin: 10px 5px;
     }
   }
   span {
     font-size: 13px;
+    @media screen and (max-width: 320px) {
+      width: 240px;
+      font-size: 12px;
+    }
   }
 `;
 export const Logo = styled.div`
