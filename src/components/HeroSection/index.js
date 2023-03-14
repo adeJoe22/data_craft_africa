@@ -1,8 +1,6 @@
 import React from "react";
 import {
-  HeroBg,
   HeroContainer,
-  ImageBg,
   HeroContent,
   HeroHeading,
   Form,
@@ -20,10 +18,6 @@ const HeroSection = () => {
     <>
       {/* <Slider> */}
       <HeroContainer>
-        {/* <HeroBg>
-          <ImageBg src={bg2} alt="bgImage2" />
-        </HeroBg> */}
-
         <HeroContent>
           <Form>
             <Left>
