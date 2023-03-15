@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ServiceComponent = styled.div`
+export const MemberComponent = styled.div`
   @media screen and (max-width: 425px) {
     padding: 40px 15px;
   }
@@ -8,7 +8,7 @@ export const ServiceComponent = styled.div`
     padding: 20px 10px;
   }
 `;
-export const ServiceWrapper = styled.div`
+export const MemberWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -26,11 +26,12 @@ export const ServiceWrapper = styled.div`
   }
 `;
 
-export const ServiceCaption = styled.div`
+export const MemberCaption = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin: 30px;
   ::before {
     position: absolute;
     content: "";
@@ -45,7 +46,7 @@ export const ServiceCaption = styled.div`
     font-size: 30px;
     margin-bottom: 15px;
     @media screen and (max-width: 320px) {
-      font-size: 22px;
+      font-size: 24px;
     }
   }
   p {
@@ -62,16 +63,18 @@ export const ServiceCaption = styled.div`
     }
     @media screen and (max-width: 320px) {
       padding: 0 15px 25px 15px;
-      width: 260px;
+      width: 270px;
     }
   }
 `;
 
-export const ServiceRow = styled.div`
+export const MemberRow = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
   margin: 30px 0;
+
+  flex-wrap: wrap;
   @media screen and (max-width: 768px) {
     flex-wrap: wrap;
   }
@@ -80,67 +83,65 @@ export const ServiceRow = styled.div`
   }
   @media screen and (max-width: 320px) {
     flex-wrap: wrap;
-    /* background-color: red; */
-    margin: 20px 0;
+    width: 300px;
   }
 `;
 
-export const ServiceColumn = styled.div`
+export const MemberCard = styled.div`
+  width: 350px;
+  margin: 15px;
+
   display: flex;
-  flex-direction: column;
-  width: 640px;
-  @media screen and (max-width: 425px) {
-    width: 380px;
-  }
-  @media screen and (max-width: 320px) {
-    width: 270px;
-  }
-`;
-export const ServiceColumn2 = styled.div`
-  img {
-    width: 100%;
-    @media screen and (max-width: 425px) {
-      width: 390px;
-    }
-    @media screen and (max-width: 320px) {
-      width: 270px;
-    }
-  }
-`;
-export const Items = styled.div`
-  display: flex;
+
   flex-direction: column;
   align-items: center;
-  margin: 15px 10px;
+  justify-content: space-between;
+  @media screen and (max-width: 425px) {
+  }
+  @media screen and (max-width: 320px) {
+    width: 290px;
+    margin: 2px;
+  }
+`;
+export const ImageWrap = styled.div`
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  /* border: 1px solid; */
+  margin: 10px;
+  img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+  }
+`;
+export const Title = styled.div`
   span {
+    color: #c52d2f;
   }
-  div {
-    font-weight: 500;
-    font-size: 18px;
-    text-align: center;
-    color: #676a6c;
-    @media screen and (max-width: 320px) {
-      font-size: 15px;
-      width: 270px;
-    }
-  }
-  p {
-    font-weight: 400;
-    font-size: 13px;
-    text-align: center;
-    color: #676a6c;
-    line-height: 1.4;
-    margin-top: 10px;
-
-    @media screen and (max-width: 425px) {
-      font-size: 12px;
-      width: 370px;
-      margin: 15px 0px;
-    }
-    @media screen and (max-width: 320px) {
-      font-size: 12px;
-      width: 260px;
-      margin: 3px 0;
+`;
+export const Desc = styled.p`
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 10px;
+`;
+export const SocialIcons = styled.div`
+  display: flex;
+  span {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00acee;
+    transition: all 350ms;
+    margin: 7px;
+    :hover {
+      background-color: #c52d2f;
     }
   }
 `;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 export const WelcomeContainer = styled.div`
   @media screen and (max-width: 768px) {
     padding: 20px 0;
@@ -153,7 +153,7 @@ export const BtnWrap = styled.div`
   justify-content: flex-start;
 `;
 
-export const Button = styled.button`
+export const Button = styled(Link)`
   color: #fff;
   border-radius: 4px;
   padding: 10px 20px;
@@ -161,6 +161,7 @@ export const Button = styled.button`
   font-weight: 500;
   font-size: 18px;
   background-color: #c52d2f;
+  text-decoration: none;
 `;
 export const ImgWrap = styled.div`
   max-width: 600px;

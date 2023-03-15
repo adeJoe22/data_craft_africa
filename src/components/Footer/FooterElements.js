@@ -2,6 +2,7 @@ import styled from "styled-components";
 import footerBg from "../../images/asset10.png";
 export const FooterContainer = styled.div`
   height: 520px;
+  width: 100%;
   background: url(${footerBg});
   background-repeat: no-repeat;
   background-position: center;
@@ -13,6 +14,8 @@ export const FooterContainer = styled.div`
   @media screen and (max-width: 425px) {
     padding: 50px 0;
     height: 655px;
+  }
+  @media screen and (max-width: 320px) {
   }
 `;
 
@@ -31,6 +34,10 @@ export const FooterWrapper = styled.div`
   }
   @media screen and (max-width: 425px) {
     height: 100%;
+  }
+  @media screen and (max-width: 320px) {
+    height: 100%;
+    width: 310px;
   }
 `;
 
@@ -68,6 +75,10 @@ export const FooterRow = styled.div`
   width: 100%;
   margin: 50px 0;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 320px) {
+    margin: 10px 0;
+  }
 `;
 
 export const ContactSection = styled.div`

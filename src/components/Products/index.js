@@ -16,13 +16,11 @@ import {
   LinkWrap,
   Links,
 } from "./ProductsElements";
-import { cardOne, cardTwo, cardThree } from "./productData";
+import { prodData } from "./productData";
 const Products = () => {
   const [open, setOpen] = useState(false);
-  const [details, setDetails] = useState([]);
-  const displayDesc = (link) => {
-    setDetails([link]);
-  };
+  const [details, setDetails] = useState(null);
+
   return (
     <>
       <ProductContainer>
@@ -37,53 +35,25 @@ const Products = () => {
             </ProductCaptionContent>
           </ProductCaption>
           <ProductRow>
-            {cardOne.map(({ id, title, desc, link }) => (
+            {prodData.map(({ id, title, desc, link }) => (
               <ProductCard key={id}>
                 <CardTitle>{title}</CardTitle>
                 <Description>{desc}</Description>
                 {link.map(({ id, name, desc }) => (
-                  <LinkWrap key={id}>
-                    <Links onClick={() => displayDesc(link)}>{name}</Links>
+                  <LinkWrap
+                    key={id}
+                    onClick={() => {
+                      setDetails({ name, desc, id });
+                      setOpen(true);
+                    }}
+                  >
+                    <Links>{name}</Links>
                   </LinkWrap>
                 ))}
               </ProductCard>
             ))}
-            {cardTwo.map(({ id, link, title, desc }) => (
-              <ProductCard2 key={id}>
-                <CardTitle>{title}</CardTitle>
-                <Description>{desc}</Description>
-                {link.map(({ id, name, desc }) => (
-                  <LinkWrap key={id}>
-                    <Links>{name}</Links>
-                  </LinkWrap>
-                ))}
-              </ProductCard2>
-            ))}
-            {cardThree.map(({ id, title, link, desc }) => (
-              <ProductCard3 key={id}>
-                <CardTitle>{title}</CardTitle>
-                <Description>{desc}</Description>
-                {link.map(({ id, desc, name }) => (
-                  <LinkWrap key={id}>
-                    <Links>{name}</Links>
-                  </LinkWrap>
-                ))}
-              </ProductCard3>
-            ))}
           </ProductRow>
-          {/* <ProductsModal>
-            <ModalWrap>
-              {details.map((props) => (
-                <ModalCard key={props.id}>
-                  <ModalTitle>{props.name}</ModalTitle>
-                  <ModalDescription>{props.desc}</ModalDescription>
-                  <Close>
-                    <button onClick={() => setOpen(false)}>Close</button>
-                  </Close>
-                </ModalCard>
-              ))}
-            </ModalWrap>
-          </ProductsModal> */}
+          {open ? <Modal data={details} setOpen={setOpen} open={open} /> : null}
         </ProductWrapper>
       </ProductContainer>
     </>
@@ -92,20 +62,36 @@ const Products = () => {
 
 export default Products;
 
+const Modal = ({ data: { id, desc, name }, setOpen, open }) => {
+  return (
+    <ProductsModal open={open && "open"}>
+      <ModalWrap>
+        <ModalCard key={id}>
+          <ModalTitle>{name}</ModalTitle>
+          <ModalDescription>{desc}</ModalDescription>
+          <Close>
+            <button onClick={() => setOpen(false)}>Close</button>
+          </Close>
+        </ModalCard>
+      </ModalWrap>
+    </ProductsModal>
+  );
+};
+
 const ProductsModal = styled.div`
   width: 100%;
   height: 100vh;
-  /* position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 200; */
+  z-index: 200;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #00000060;
+  background-color: #00000070;
 
   transition: 1.3s ease-in;
-  /* transform: translateY(${(props) => (props.open ? "0" : "-100vh")}); */
+  transform: translateY(${(props) => (props.open ? "0" : "-100vh")});
 `;
 
 const ModalWrap = styled.div`
@@ -125,6 +111,10 @@ const ModalCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 320px) {
+    width: 300px;
+    padding: 0px;
+  }
 `;
 
 const ModalTitle = styled.div`
@@ -136,6 +126,10 @@ const ModalDescription = styled.div`
   padding: 12px;
   border-top: 1px solid #d1d1d1;
   border-bottom: 1px solid #d1d1d1;
+  @media screen and (max-width: 320px) {
+    font-size: 11px;
+    width: 280px;
+  }
 `;
 const Close = styled.div`
   width: 100%;
@@ -147,5 +141,7 @@ const Close = styled.div`
     padding: 7px 15px;
     border: none;
     border-radius: 4px;
+    background-color: #c52d2f;
+    color: #fff;
   }
 `;

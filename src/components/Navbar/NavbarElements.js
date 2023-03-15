@@ -120,20 +120,3 @@ export const NavBtn = styled.nav`
     display: none;
   }
 `;
-
-export const NavBtnLink = styled(LinkR)`
-  background-color: #fff;
-  white-space: nowrap;
-  padding: 10px;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    color: #83d0c0;
-  }
-`;

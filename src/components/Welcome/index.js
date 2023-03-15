@@ -38,7 +38,7 @@ const Welcome = ({ imgStart, img, alt, title, description, description2 }) => {
                 <Subtitle>{description}</Subtitle>
                 <Subtitle>{description2}</Subtitle>
                 <BtnWrap>
-                  <Button to="team">Our Team</Button>
+                  <Button to="/team">Our Team</Button>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

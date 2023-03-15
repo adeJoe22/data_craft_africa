@@ -76,7 +76,7 @@ export const ProductRow = styled.div`
 `;
 export const ProductCard = styled.div`
   width: 350px;
-  height: 457px;
+  min-height: 336px;
   margin: 10px 24px;
 
   display: flex;
@@ -86,32 +86,7 @@ export const ProductCard = styled.div`
   @media screen and (max-width: 320px) {
     padding: 0 15px 25px 15px;
     width: 290px;
-  }
-`;
-export const ProductCard2 = styled.div`
-  width: 350px;
-  height: 336px;
-
-  margin: 10px 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @media screen and (max-width: 320px) {
-    padding: 0 15px 25px 15px;
-    width: 290px;
-  }
-`;
-export const ProductCard3 = styled.div`
-  width: 350px;
-
-  margin: 10px 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f4f4f4;
-  @media screen and (max-width: 320px) {
-    padding: 0 15px 25px 15px;
-    width: 290px;
+    margin: 2px 24px;
   }
 `;
 
@@ -138,13 +113,13 @@ export const Description = styled.div`
   color: #b5c8e8;
   background-color: #f4f4f4;
 `;
-export const LinkWrap = styled.div`
+export const LinkWrap = styled.a`
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
-export const Links = styled.div`
+export const Links = styled.span`
   padding: 14px;
   border-top: 1px solid #ccc;
   width: 100%;
