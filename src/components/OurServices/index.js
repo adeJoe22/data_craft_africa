@@ -12,7 +12,7 @@ import img from "../../images/asset3.png";
 const Service = () => {
   return (
     <>
-      <ServiceComponent>
+      <ServiceComponent id="service">
         <ServiceWrapper>
           <ServiceCaption>
             <div>Our Core Services</div>

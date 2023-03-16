@@ -2,6 +2,7 @@
   "name": "new_demo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://datacraft.systems/",
   "dependencies": {
     "@hookform/resolvers": "^2.8.8",
     "@mui/icons-material": "^5.4.1",

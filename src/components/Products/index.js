@@ -23,7 +23,7 @@ const Products = () => {
 
   return (
     <>
-      <ProductContainer>
+      <ProductContainer id="product">
         <ProductWrapper>
           <ProductCaption>
             <ProductCaptionContent>

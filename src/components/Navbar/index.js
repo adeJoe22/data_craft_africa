@@ -10,10 +10,10 @@ import {
 } from "./NavbarElements";
 import { FaBars } from "react-icons/fa";
 import logo from "../../images/logo.png";
-import { navLinkItems } from "../navData";
 import { useState } from "react";
 import { useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
+
 const Navbar = ({ toggle }) => {
   const [navbar, setNavbar] = useState(false);
 
@@ -32,27 +32,87 @@ const Navbar = ({ toggle }) => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+
   return (
     <>
-      <Nav className={navbar && "active"}>
+      <Nav scrollNav={navbar}>
         <NavbarContainer>
           <NavLogo to={"/"} onClick={toggleHome}>
             <img src={logo} alt="DataCraft" />
             <div style={{ textDecoration: "none" }}>
-              <p style={{ fontWeight: "600" }}>DATA</p> <p>CRAFT</p>
+              <p style={{ fontWeight: "600" }}>Data</p> <p>Craft</p>
             </div>
           </NavLogo>
           <MobileIcon className={navbar && "active"} onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
-            {navLinkItems.map(({ to, name }, i) => (
-              <NavItem key={i}>
-                <NavLinks to={to} className={navbar && "active"}>
-                  {name}
-                </NavLinks>
-              </NavItem>
-            ))}
+            <NavItem>
+              <NavLinks
+                scrollNav={navbar}
+                to="home"
+                smooth={true}
+                duration={500}
+                offset={-70}
+              >
+                Home
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                scrollNav={navbar}
+                to="about"
+                smooth={true}
+                duration={500}
+                offset={-70}
+              >
+                About
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                scrollNav={navbar}
+                to="product"
+                smooth={true}
+                duration={500}
+                offset={-70}
+              >
+                Product
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                scrollNav={navbar}
+                to="service"
+                smooth={true}
+                duration={500}
+                offset={-70}
+              >
+                Service
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                scrollNav={navbar}
+                to="reference"
+                smooth={true}
+                duration={500}
+                offset={-70}
+              >
+                References
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                scrollNav={navbar}
+                to="contact"
+                smooth={true}
+                duration={500}
+                offset={-70}
+              >
+                Contact Us
+              </NavLinks>
+            </NavItem>
           </NavMenu>
         </NavbarContainer>
       </Nav>

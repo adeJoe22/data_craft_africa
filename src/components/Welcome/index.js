@@ -18,7 +18,7 @@ import {
 const Welcome = ({ imgStart, img, alt, title, description, description2 }) => {
   return (
     <>
-      <WelcomeContainer>
+      <WelcomeContainer id="about">
         <WelcomeWrapper>
           <WelcomeCaption>
             <CaptionContent>

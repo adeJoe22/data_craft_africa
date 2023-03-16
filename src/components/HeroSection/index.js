@@ -17,7 +17,7 @@ const HeroSection = () => {
   return (
     <>
       {/* <Slider> */}
-      <HeroContainer>
+      <HeroContainer id="home">
         <HeroContent>
           <Form>
             <Left>
