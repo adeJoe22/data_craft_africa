@@ -184,7 +184,7 @@ export const SocialSection = styled.div`
       background-color: #c52d2f;
     }
     svg {
-      font-size: 13px;
+      font-size: 14px;
       color: #fff;
     }
   }

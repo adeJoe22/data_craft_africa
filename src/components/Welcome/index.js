@@ -22,9 +22,9 @@ const Welcome = ({ imgStart, img, alt, title, description, description2 }) => {
         <WelcomeWrapper>
           <WelcomeCaption>
             <CaptionContent>
-              <div>Welcome to DATA CRAFT</div>
+              <div>Welcome to Data Craft</div>
               <p>
-                DATA CRAFT also known as “Fulcrum” translates into our core
+                Data Craft also known as “Fulcrum” translates into our core
                 philosophy that centers on providing relevant, flexible,
                 scalable, intelligent, and forward thinking solutions to our
                 customers.

@@ -52,10 +52,10 @@ const Service = () => {
                 <span></span>
                 <div>Push & Pull</div>
                 <p>
-                  Pivot Access offers this service to clients who wish to
-                  transfer funds between their bank accounts and mobile money
-                  wallets. This is called the “PUSH & PULL SERVICE” because
-                  Funds can be pushed to/from either of the accounts.
+                  Data Craft offers this service to clients who wish to transfer
+                  funds between their bank accounts and mobile money wallets.
+                  This is called the “PUSH & PULL SERVICE” because Funds can be
+                  pushed to/from either of the accounts.
                 </p>
               </Items>
               <Items>

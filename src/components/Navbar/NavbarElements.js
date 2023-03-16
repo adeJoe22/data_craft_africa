@@ -28,7 +28,9 @@ export const NavbarContainer = styled.div`
   height: 70px;
   z-index: 1;
   width: 100%;
-  /* padding: 0 24px; */
+  @media screen and (max-width: 320px) {
+    width: 320px;
+  }
 `;
 
 export const NavLogo = styled(LinkR)`
@@ -38,16 +40,16 @@ export const NavLogo = styled(LinkR)`
   display: flex;
   align-items: center;
   margin-left: 100px;
+  @media screen and (max-width: 320px) {
+    margin-left: 30px;
+  }
   img {
-    width: 60px;
-    height: 60px;
-    @media screen and (max-width: 320px) {
-      margin-left: 20px;
-    }
+    width: 50px;
+    height: 50px;
   }
   div {
     display: flex;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #000;
     @media screen and (max-width: 320px) {
       display: none;
