@@ -18,7 +18,7 @@ const Navbar = ({ toggle }) => {
   const [navbar, setNavbar] = useState(false);
 
   const changeBcg = () => {
-    if (window.scrollY >= 220) {
+    if (window.scrollY >= 70) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -37,13 +37,13 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav={navbar}>
         <NavbarContainer>
-          <NavLogo to={"/"} onClick={toggleHome}>
+          <NavLogo scrollNav={navbar} to={"/"} onClick={toggleHome}>
             <img src={logo} alt="DataCraft" />
             <div style={{ textDecoration: "none" }}>
               <p style={{ fontWeight: "600" }}>Data</p> <p>Craft</p>
             </div>
           </NavLogo>
-          <MobileIcon className={navbar && "active"} onClick={toggle}>
+          <MobileIcon scrollNav={navbar} onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>

@@ -40,6 +40,10 @@ export const NavLogo = styled(LinkR)`
   display: flex;
   align-items: center;
   margin-left: 100px;
+  color: ${({ scrollNav }) => (scrollNav ? "#000" : "#fff")};
+  @media screen and (max-width: 768px) {
+    margin-left: 50px;
+  }
   @media screen and (max-width: 320px) {
     margin-left: 30px;
   }
@@ -49,8 +53,7 @@ export const NavLogo = styled(LinkR)`
   }
   div {
     display: flex;
-    font-size: 1.6rem;
-    color: #000;
+    font-size: 1.5rem;
     @media screen and (max-width: 320px) {
       display: none;
     }
@@ -71,9 +74,10 @@ export const MobileIcon = styled.div`
     color: ${({ scrollNav }) => (scrollNav ? "#000" : "#fff")};
   }
   @media screen and (max-width: 425px) {
-    &.active {
+    /* &.active {
       color: #000;
-    }
+    } */
+    color: ${({ scrollNav }) => (scrollNav ? "#000" : "#fff")};
   }
 `;
 

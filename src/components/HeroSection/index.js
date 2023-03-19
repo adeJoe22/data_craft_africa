@@ -19,25 +19,10 @@ const HeroSection = () => {
       {/* <Slider> */}
       <HeroContainer id="home">
         <HeroContent>
-          <Form>
-            <Left>
-              <div>
-                <label>Username</label>
-                <input placeholder="Username" />
-              </div>
-              <div>
-                <label>Password</label>
-                <input placeholder="Password" />
-              </div>
-            </Left>
-            <Right>
-              <button type="submit">Login</button>
-              <div>Forgot Password?</div>
-            </Right>
-          </Form>
           <HeroHeading>
-            Our core values: <br />
-            Creativity, efficiency and quality.
+            <h3> Our core values:</h3>
+
+            <div> Creativity, efficiency and quality.</div>
           </HeroHeading>
         </HeroContent>
       </HeroContainer>
